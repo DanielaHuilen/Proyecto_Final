@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}
+<h1>Alumnos de la institución</h1>
+{% endblock %}
+
+
+{% block content %}
+{% for alumnos in Alumnos %}
+<p> {{ alumnos }} </p>
+{% endfor %}
+{% endblock %}

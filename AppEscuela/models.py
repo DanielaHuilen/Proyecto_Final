@@ -15,9 +15,10 @@ class Alumno (models.Model):
     nombre= models.CharField(max_length=20)
     apellido=models.CharField(max_length=20)
     edad=models.IntegerField()
+    modalidad=models.CharField(max_length=20)
     
     def __str__ (self):
-        return f"Alumno: {self.apellido} {self.nombre}"
+        return f"Alumno: {self.apellido} {self.nombre}, modalidad: {self.modalidad}  "
     
 class Materias (models.Model):
     nombre= models.CharField(max_length=20)
