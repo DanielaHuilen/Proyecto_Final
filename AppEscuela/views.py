@@ -17,3 +17,9 @@ def materias_index (request:HttpRequest) -> HttpResponse:
     materias= Materias.objects.all()
     return render (request, 'materias_index.html', {"materias":materias})
 
+#Clase 19 con Franco 11:17
+def inicio (request):
+    return render (request,"inicio.html")
+    
+
+

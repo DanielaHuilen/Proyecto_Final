@@ -1,9 +1,16 @@
-{% extends 'base.html' %}
+{% extends "padre.html" %}
+
 {% load static %}
 
-{% block title%}
-<h1>Materias que se dictan en la institución</h1>
+{% block titulo %}
+<h1 class="mb-5"> Materias que dictamos </h1>
 {% endblock %}
+
+{% block contenido_que_cambia %}
+<h1> Este contenido cambio </h1>
+{% endblock %}
+
+#De aca para abajo es lo viejo
 
 {% block content %}
 {% for materias in Materias %}
