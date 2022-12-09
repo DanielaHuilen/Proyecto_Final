@@ -1,0 +1,27 @@
+{% extends "padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5"> Resultados de la busqueda de Profesores </h1>
+{% endblock %}
+
+{% block contenido_que_cambia %}
+
+{% if profesores %}
+
+<ul>
+
+    {% for profesores in profesores %}
+
+    <p> {{profesores}} </p>
+    
+    {% endfor %}
+{% else %}
+
+<p> No hay docentes con esa antiguedad </p>
+
+{% endif %}
+
+
+{% endblock %}
